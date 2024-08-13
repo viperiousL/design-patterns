@@ -1,4 +1,4 @@
-package com.itheima.pattern.adapter.class_adapter;
+package com.itheima.pattern.adapter.objectadapter;
 
 /**
  * @version v1.0

@@ -1,4 +1,4 @@
-package com.itheima.pattern.adapter.object_adapter;
+package com.itheima.pattern.adapter.classadapter;
 
 /**
  * @version v1.0
@@ -6,22 +6,17 @@ package com.itheima.pattern.adapter.object_adapter;
  * @Description: 适配器类
  * @Author: 黑马程序员
  */
-public class SDAdapterTF implements SDCard {
+public class SDAdapterTF extends TFCardImpl implements SDCard {
 
-    //声明适配者类
-    private TFCard tfCard;
-
-    public SDAdapterTF(TFCard tfCard) {
-        this.tfCard = tfCard;
-    }
-
+    @Override
     public String readSD() {
         System.out.println("adapter read tf card");
-        return tfCard.readTF();
+        return readTF();
     }
 
+    @Override
     public void writeSD(String msg) {
         System.out.println("adapter write tf card");
-        tfCard.writeTF(msg);
+        writeTF(msg);
     }
 }
