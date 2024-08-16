@@ -8,5 +8,10 @@ package com.itheima.pattern.observer;
  */
 public interface Observer {
 
+    /**
+     * 更新消息
+     *
+     * @param message 消息内容
+     */
     void update(String message);
 }

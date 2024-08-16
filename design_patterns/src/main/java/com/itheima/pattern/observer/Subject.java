@@ -9,12 +9,24 @@ package com.itheima.pattern.observer;
  */
 public interface Subject {
 
-    //添加订阅者（添加观察者对象）
+    /**
+     * 添加订阅者（添加观察者对象）
+     *
+     * @param observer 订阅者
+     */
     void attach(Observer observer);
 
-    //删除订阅者
+    /**
+     * 删除订阅者
+     *
+     * @param observer 订阅者
+     */
     void detach(Observer observer);
 
-    //通知订阅者更新消息
+    /**
+     * 通知订阅者更新消息
+     *
+     * @param message 消息内容
+     */
     void notify(String message);
 }
