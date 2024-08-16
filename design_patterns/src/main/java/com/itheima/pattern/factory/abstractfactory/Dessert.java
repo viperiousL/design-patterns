@@ -7,6 +7,8 @@ package com.itheima.pattern.factory.abstractfactory;
  * @Author: 黑马程序员
  */
 public abstract class Dessert {
-
+    /**
+     * 展示
+     */
     public abstract void show();
 }

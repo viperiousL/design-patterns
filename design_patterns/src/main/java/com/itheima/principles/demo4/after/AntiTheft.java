@@ -7,5 +7,8 @@ package com.itheima.principles.demo4.after;
  * @Author: 黑马程序员
  */
 public interface AntiTheft {
+    /**
+     * 防盗
+     */
     void antiTheft();
 }

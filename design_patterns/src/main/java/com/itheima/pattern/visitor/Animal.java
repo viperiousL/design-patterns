@@ -10,6 +10,8 @@ public interface Animal {
 
     /**
      * 接受访问者访问的功能
+     *
+     * @param person 人
      */
     void accept(Person person);
 }

@@ -40,5 +40,10 @@ public abstract class FastFood {
     public FastFood() {
     }
 
+    /**
+     * 价格
+     *
+     * @return float
+     */
     public abstract float cost();
 }

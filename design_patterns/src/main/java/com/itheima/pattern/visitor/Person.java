@@ -10,11 +10,15 @@ public interface Person {
 
     /**
      * 喂食宠物狗
+     *
+     * @param cat 猫
      */
     void feed(Cat cat);
 
     /**
      * 喂食宠物猫
+     *
+     * @param dog 狗
      */
     void feed(Dog dog);
 }

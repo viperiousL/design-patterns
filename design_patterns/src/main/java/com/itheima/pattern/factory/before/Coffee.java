@@ -7,7 +7,11 @@ package com.itheima.pattern.factory.before;
  * @Author: 黑马程序员
  */
 public abstract class Coffee {
-
+    /**
+     * 获取名称
+     *
+     * @return string
+     */
     public abstract String getName();
 
     /**

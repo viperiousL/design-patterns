@@ -8,6 +8,11 @@ package com.itheima.pattern.factory.abstractfactory;
  */
 public abstract class Coffee {
 
+    /**
+     * 获取名称
+     *
+     * @return string
+     */
     public abstract String getName();
 
     /**

@@ -10,6 +10,8 @@ public interface CoffeeFactory {
 
     /**
      * 创建咖啡对象的方法
+     *
+     * @return coffee
      */
     Coffee createCoffee();
 }

@@ -18,6 +18,8 @@ public interface ILift {
 
     /**
      * 设置电梯状态的功能
+     *
+     * @param state 状态
      */
     void setState(int state);
 
@@ -26,9 +28,18 @@ public interface ILift {
      */
     void open();
 
+    /**
+     * 关闭
+     */
     void close();
 
+    /**
+     * 运行
+     */
     void run();
 
+    /**
+     * 停止
+     */
     void stop();
 }

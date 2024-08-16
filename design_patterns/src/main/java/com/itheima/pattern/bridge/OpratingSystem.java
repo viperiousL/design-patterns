@@ -17,5 +17,10 @@ public abstract class OpratingSystem {
         this.videoFile = videoFile;
     }
 
+    /**
+     * 播放
+     *
+     * @param fileName 文件名
+     */
     public abstract void play(String fileName);
 }

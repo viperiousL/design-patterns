@@ -7,6 +7,8 @@ package com.itheima.pattern.strategy;
  * @Author: 黑马程序员
  */
 public interface Strategy {
-
+    /**
+     * 售卖
+     */
     void show();
 }

@@ -7,6 +7,8 @@ package com.itheima.pattern.proxy.staticproxy;
  * @Author: 黑马程序员
  */
 public interface SellTickets {
-
+    /**
+     * 售卖
+     */
     void sell();
 }

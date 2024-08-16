@@ -13,12 +13,20 @@ public abstract class Builder {
      */
     protected Bike bike = new Bike();
 
+    /**
+     * 造车架
+     */
     public abstract void buildFrame();
 
+    /**
+     * 造座椅
+     */
     public abstract void buildSeat();
 
     /**
      * 构建自行车的方法
+     *
+     * @return 自行车
      */
     public abstract Bike createBike();
 }

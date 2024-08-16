@@ -7,6 +7,8 @@ package com.itheima.pattern.command;
  * @Author: 黑马程序员
  */
 public interface Command {
-
+    /**
+     * 执行
+     */
     void execute();
 }
