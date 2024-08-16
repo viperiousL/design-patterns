@@ -8,9 +8,13 @@ package com.itheima.pattern.interpreter;
  */
 public class Minus extends AbstractExpression {
 
-    //-号左边的表达式
+    /**
+     * -号左边的表达式
+     */
     private AbstractExpression left;
-    //-号右边的表达式
+    /**
+     * -号右边的表达式
+     */
     private AbstractExpression right;
 
     public Minus(AbstractExpression left, AbstractExpression right) {

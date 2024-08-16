@@ -8,7 +8,9 @@ package com.itheima.pattern.mediator;
  */
 public class MediatorStructure extends Mediator {
 
-    //聚合房主和租房者对象
+    /**
+     * 聚合房主和租房者对象
+     */
     private HouseOwner houseOwner;
     private Tenant tenant;
 
@@ -29,7 +31,7 @@ public class MediatorStructure extends Mediator {
     }
 
     @Override
-    public void constact(String message, Person person) {
+    public void contact(String message, Person person) {
         if (person == houseOwner) {
             tenant.getMessage(message);
         } else {

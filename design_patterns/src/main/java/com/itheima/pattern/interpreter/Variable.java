@@ -1,5 +1,7 @@
 package com.itheima.pattern.interpreter;
 
+import java.util.Objects;
+
 /**
  * @version v1.0
  * @ClassName: Variable
@@ -8,7 +10,9 @@ package com.itheima.pattern.interpreter;
  */
 public class Variable extends AbstractExpression {
 
-    //声明存储变量名的成员变量
+    /**
+     * 声明存储变量名的成员变量
+     */
     private String name;
 
     public Variable(String name) {
@@ -24,5 +28,22 @@ public class Variable extends AbstractExpression {
     @Override
     public String toString() {
         return name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Variable variable = (Variable) o;
+        return Objects.equals(name, variable.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 }

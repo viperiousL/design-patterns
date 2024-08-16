@@ -21,7 +21,9 @@ public class Client {
         readObjectFromFile();
     }
 
-    //从文件读取数据（对象）
+    /**
+     * 从文件读取数据（对象）
+     */
     public static void readObjectFromFile() throws Exception {
         //1,创建对象输入流对象
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("C:\\Users\\Think\\Desktop\\a.txt"));
@@ -34,7 +36,9 @@ public class Client {
         ois.close();
     }
 
-    //向文件中写数据（对象）
+    /**
+     * 向文件中写数据（对象）
+     */
     public static void writeObject2File() throws Exception {
         //1,获取Singleton对象
         Singleton instance = Singleton.getInstance();

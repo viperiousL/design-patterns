@@ -7,9 +7,14 @@ package com.itheima.pattern.decorator;
  * @Author: 黑马程序员
  */
 public abstract class FastFood {
-
-    private float price;//价格
-    private String desc; //描述
+    /**
+     * 价格
+     */
+    private float price;
+    /**
+     * 描述
+     */
+    private String desc;
 
     public float getPrice() {
         return price;

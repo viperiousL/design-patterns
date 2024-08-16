@@ -11,10 +11,14 @@ import java.util.List;
  */
 public class Home {
 
-    //声明一个集合对象，用来存储元素对象
+    /**
+     * 声明一个集合对象，用来存储元素对象
+     */
     private List<Animal> nodeList = new ArrayList<Animal>();
 
-    //添加元素功能
+    /**
+     * 添加元素功能
+     */
     public void add(Animal animal) {
         nodeList.add(animal);
     }

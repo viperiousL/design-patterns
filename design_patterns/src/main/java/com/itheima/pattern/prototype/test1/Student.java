@@ -10,7 +10,9 @@ import java.io.Serializable;
  */
 public class Student implements Serializable {
 
-    //学生的姓名
+    /**
+     * 学生的姓名
+     */
     private String name;
 
     public String getName() {

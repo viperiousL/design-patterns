@@ -14,7 +14,9 @@ public class Phone {
     private String memory;
     private String mainboard;
 
-    //私有构造方法
+    /**
+     * 私有构造方法
+     */
     private Phone(Builder builder) {
         this.cpu = builder.cpu;
         this.screen = builder.screen;

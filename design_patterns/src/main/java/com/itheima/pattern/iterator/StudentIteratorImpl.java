@@ -11,7 +11,10 @@ import java.util.List;
 public class StudentIteratorImpl implements StudentIterator {
 
     private List<Student> list;
-    private int position = 0;//用来记录遍历时的位置
+    /**
+     * 用来记录遍历时的位置
+     */
+    private int position = 0;
 
     public StudentIteratorImpl(List<Student> list) {
         this.list = list;

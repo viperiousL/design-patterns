@@ -36,7 +36,9 @@ public class Computer {
         this.memory = memory;
     }
 
-    //运行计算机
+    /**
+     * 运行计算机
+     */
     public void run() {
         System.out.println("运行计算机");
         String data = hardDisk.get();

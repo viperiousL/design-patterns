@@ -8,7 +8,9 @@ package com.itheima.pattern.prototype.test;
  */
 public class Student {
 
-    //学生的姓名
+    /**
+     * 学生的姓名
+     */
     private String name;
 
     public String getName() {

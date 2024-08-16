@@ -8,7 +8,9 @@ package com.itheima.pattern.facade;
  */
 public class SmartAppliancesFacade {
 
-    //聚合电灯对象，电视机对象，空调对象
+    /**
+     * 聚合电灯对象，电视机对象，空调对象
+     */
     private Light light;
     private TV tv;
     private AirCondition airCondition;
@@ -19,7 +21,9 @@ public class SmartAppliancesFacade {
         airCondition = new AirCondition();
     }
 
-    //通过语言控制
+    /**
+     * 通过语言控制
+     */
     public void say(String message) {
         if (message.contains("打开")) {
             on();
@@ -30,14 +34,18 @@ public class SmartAppliancesFacade {
         }
     }
 
-    //一键打开功能
+    /**
+     * 一键打开功能
+     */
     private void on() {
         light.on();
         tv.on();
         airCondition.on();
     }
 
-    //一键关闭功能
+    /**
+     * 一键关闭功能
+     */
     private void off() {
         light.off();
         tv.off();

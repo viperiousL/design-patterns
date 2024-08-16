@@ -8,7 +8,9 @@ package com.itheima.pattern.strategy;
  */
 public class SalesMan {
 
-    //聚合策略类对象
+    /**
+     * 聚合策略类对象
+     */
     private Strategy strategy;
 
     public SalesMan(Strategy strategy) {
@@ -23,7 +25,9 @@ public class SalesMan {
         this.strategy = strategy;
     }
 
-    //由促销员展示促销活动给用户
+    /**
+     * 由促销员展示促销活动给用户
+     */
     public void salesManShow() {
         strategy.show();
     }

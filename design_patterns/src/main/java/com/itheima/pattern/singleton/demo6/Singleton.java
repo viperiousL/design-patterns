@@ -7,5 +7,6 @@ package com.itheima.pattern.singleton.demo6;
  * @Author: 黑马程序员
  */
 public enum Singleton {
+    //例子
     INSTANCE;
 }

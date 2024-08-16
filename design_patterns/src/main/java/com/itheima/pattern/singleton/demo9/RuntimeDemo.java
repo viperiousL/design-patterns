@@ -20,7 +20,8 @@ public class RuntimeDemo {
         InputStream is = process.getInputStream();
         byte[] arr = new byte[1024 * 1024 * 100];
         //读取数据
-        int len = is.read(arr);//返回读到的字节的个数
+        //返回读到的字节的个数
+        int len = is.read(arr);
         //将字节数组转换为字符串输出到控制台
         System.out.println(new String(arr, 0, len, "GBK"));
     }

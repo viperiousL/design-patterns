@@ -7,13 +7,19 @@ package com.itheima.pattern.responsibility;
  * @Author: 黑马程序员
  */
 public class LeaveRequest {
-    //姓名
+    /**
+     * 姓名
+     */
     private String name;
 
-    //请假天数
+    /**
+     * 请假天数
+     */
     private int num;
 
-    //请假内容
+    /**
+     * 请假内容
+     */
     private String content;
 
     public LeaveRequest(String name, int num, String content) {

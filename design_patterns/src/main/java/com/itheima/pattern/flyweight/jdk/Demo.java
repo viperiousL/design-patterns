@@ -6,6 +6,7 @@ package com.itheima.pattern.flyweight.jdk;
  * @Description: TODO(一句话描述该类的功能)
  * @Author: 黑马程序员
  */
+@SuppressWarnings("all")
 public class Demo {
     public static void main(String[] args) {
         Integer i1 = 127;

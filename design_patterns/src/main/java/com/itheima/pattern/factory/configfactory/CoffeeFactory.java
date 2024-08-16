@@ -13,11 +13,15 @@ import java.util.Set;
  */
 public class CoffeeFactory {
 
-    //加载配置文件，获取配置文件中配置的全类名，并创建该类的对象进行存储
-    //1,定义容器对象存储咖啡对象
+    /**
+     * 加载配置文件，获取配置文件中配置的全类名，并创建该类的对象进行存储
+     * 1,定义容器对象存储咖啡对象
+     */
     private static HashMap<String, Coffee> map = new HashMap<String, Coffee>();
 
-    //2,加载配置文件， 只需要加载一次
+    /**
+     * 2,加载配置文件， 只需要加载一次
+     */
     static {
         //2.1 创建Properties对象
         Properties p = new Properties();
@@ -41,7 +45,9 @@ public class CoffeeFactory {
     }
 
 
-    //根据名称获取对象
+    /**
+     * 根据名称获取对象
+     */
     public static Coffee createCoffee(String name) {
         return map.get(name);
     }

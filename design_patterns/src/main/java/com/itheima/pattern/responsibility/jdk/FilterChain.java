@@ -15,7 +15,9 @@ public class FilterChain { //过滤器链
 
     private int index = 0;
 
-    // 链式调用
+    /**
+     * 链式调用
+     */
     public FilterChain addFilter(Filter filter) {
         this.filters.add(filter);
         return this;

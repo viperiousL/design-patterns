@@ -8,6 +8,10 @@ package com.itheima.pattern.bridge;
  */
 public interface VideoFile {
 
-    //解码功能
+    /**
+     * 解码功能
+     *
+     * @param fileName 文件名
+     */
     void decode(String fileName);
 }

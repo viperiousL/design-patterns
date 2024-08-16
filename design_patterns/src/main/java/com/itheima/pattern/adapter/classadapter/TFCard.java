@@ -8,9 +8,13 @@ package com.itheima.pattern.adapter.classadapter;
  */
 public interface TFCard {
 
-    //从TF卡中读取数据
+    /**
+     * 从TF卡中读取数据
+     */
     String readTF();
 
-    //往TF卡中写数据
+    /**
+     * 往TF卡中写数据
+     */
     void writeTF(String msg);
 }

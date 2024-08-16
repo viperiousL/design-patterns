@@ -12,11 +12,15 @@ public abstract class Handler {
     protected final static int NUM_THREE = 3;
     protected final static int NUM_SEVEN = 7;
 
-    //该领导处理的请求天数区间
+    /**
+     * 该领导处理的请求天数区间
+     */
     private int numStart;
     private int numEnd;
 
-    //声明后续者（声明上级领导）
+    /**
+     * 声明后续者（声明上级领导）
+     */
     private Handler nextHandler;
 
     public Handler(int numStart) {
@@ -28,15 +32,23 @@ public abstract class Handler {
         this.numEnd = numEnd;
     }
 
-    //设置上级领导对象
+    /**
+     * 设置上级领导对象
+     */
     public void setNextHandler(Handler nextHandler) {
         this.nextHandler = nextHandler;
     }
 
-    //各级领导处理请求条的方法
+    /**
+     * 各级领导处理请求条的方法
+     *
+     * @param leave 等级
+     */
     protected abstract void handleLeave(LeaveRequest leave);
 
-    //提交请求条
+    /**
+     * 提交请求条
+     */
     public final void submit(LeaveRequest leave) {
         //该领导进行审批
         this.handleLeave(leave);

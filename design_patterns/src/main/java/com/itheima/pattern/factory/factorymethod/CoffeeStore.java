@@ -15,7 +15,9 @@ public class CoffeeStore {
         this.factory = factory;
     }
 
-    //点咖啡功能
+    /**
+     * 点咖啡功能
+     */
     public Coffee orderCoffee() {
         Coffee coffee = factory.createCoffee();
         //加配料

@@ -7,10 +7,14 @@ package com.itheima.pattern.builder.demo1;
  * @Author: 黑马程序员
  */
 public class Bike {
-
-    private String frame;//车架
-
-    private String seat;//车座
+    /**
+     * 车架
+     */
+    private String frame;
+    /**
+     * 车座
+     */
+    private String seat;
 
     public String getFrame() {
         return frame;

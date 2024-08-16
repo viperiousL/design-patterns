@@ -11,7 +11,9 @@ import java.util.Set;
  */
 public class OrderCommand implements Command {
 
-    //持有接收者对象
+    /**
+     * 持有接收者对象
+     */
     private SeniorChef receiver;
     private Order order;
 

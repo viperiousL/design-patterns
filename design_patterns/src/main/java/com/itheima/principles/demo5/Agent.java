@@ -24,12 +24,16 @@ public class Agent {
         this.company = company;
     }
 
-    //和粉丝见面的方法
+    /**
+     * 和粉丝见面的方法
+     */
     public void meeting() {
         System.out.println(star.getName() + "和粉丝" + fans.getName() + "见面");
     }
 
-    //和媒体公司洽谈的方法
+    /**
+     * 和媒体公司洽谈的方法
+     */
     public void business() {
         System.out.println(star.getName() + "和" + company.getName() + "洽谈");
     }

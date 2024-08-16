@@ -7,7 +7,9 @@ package com.itheima.pattern.state.after;
  * @Author: 黑马程序员
  */
 public class StoppingState extends LiftState {
-    //停止状态，开门，那是要的！
+    /**
+     * 停止状态，开门，那是要的！
+     */
     @Override
     public void open() {
         //状态修改
@@ -24,7 +26,9 @@ public class StoppingState extends LiftState {
         super.context.getLiftState().close();
     }
 
-    //停止状态再跑起来，正常的很
+    /**
+     * 停止状态再跑起来，正常的很
+     */
     @Override
     public void run() {
         //状态修改
@@ -33,7 +37,9 @@ public class StoppingState extends LiftState {
         super.context.getLiftState().run();
     }
 
-    //停止状态是怎么发生的呢？当然是停止方法执行了
+    /**
+     * 停止状态是怎么发生的呢？当然是停止方法执行了
+     */
     @Override
     public void stop() {
         System.out.println("电梯停止了...");

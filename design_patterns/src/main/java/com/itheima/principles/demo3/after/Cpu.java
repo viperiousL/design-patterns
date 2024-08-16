@@ -7,6 +7,8 @@ package com.itheima.principles.demo3.after;
  * @Author: 黑马程序员
  */
 public interface Cpu {
-    //运行cpu
+    /**
+     * 运行cpu
+     */
     public void run();
 }

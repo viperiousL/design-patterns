@@ -23,7 +23,9 @@ public class StudentAggregateImpl implements StudentAggregate {
         list.remove(stu);
     }
 
-    //获取迭代器对象
+    /**
+     * 获取迭代器对象
+     */
     @Override
     public StudentIterator getStudentIterator() {
         return new StudentIteratorImpl(list);

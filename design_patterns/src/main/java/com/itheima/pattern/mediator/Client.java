@@ -20,7 +20,7 @@ public class Client {
         mediator.setTenant(tenant);
         mediator.setHouseOwner(houseOwner);
 
-        tenant.constact("我要租三室的房子！！！");
-        houseOwner.constact("我这里有三室的房子，你要租吗？");
+        tenant.contact("我要租三室的房子！！！");
+        houseOwner.contact("我这里有三室的房子，你要租吗？");
     }
 }

@@ -7,7 +7,9 @@ package com.itheima.pattern.state.after;
  * @Author: 黑马程序员
  */
 public class OpeningState extends LiftState {
-    //当前状态要执行的方法
+    /**
+     * 当前状态要执行的方法
+     */
     @Override
     public void open() {
         System.out.println("电梯开启。。。");

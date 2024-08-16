@@ -10,10 +10,14 @@ import java.util.Map;
  * @Author: 黑马程序员
  */
 public class Order {
-    //餐桌号码
+    /**
+     * 餐桌号码
+     */
     private int diningTable;
 
-    //所下的餐品及份数
+    /**
+     * 所下的餐品及份数
+     */
     private Map<String, Integer> foodDir = new HashMap<String, Integer>();
 
     public int getDiningTable() {

@@ -8,7 +8,9 @@ package com.itheima.pattern.bridge;
  */
 public abstract class OpratingSystem {
 
-    //声明videFile变量
+    /**
+     * 声明videFile变量
+     */
     protected VideoFile videoFile;
 
     public OpratingSystem(VideoFile videoFile) {

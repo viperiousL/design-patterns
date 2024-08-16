@@ -10,16 +10,9 @@ import java.io.Serializable;
  */
 public class Citation implements Cloneable, Serializable {
 
-    /*//三好学生上的姓名
-    private String name;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }*/
+    /**
+     * 三好学生
+     */
     private Student stu;
 
     public Student getStu() {

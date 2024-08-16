@@ -8,9 +8,17 @@ package com.itheima.principles.demo2.after;
  */
 public interface Quadrilateral {
 
-    //获取长
+    /**
+     * 获取长
+     *
+     * @return double
+     */
     double getLength();
 
-    //获取宽
+    /**
+     * 获取宽
+     *
+     * @return double
+     */
     double getWidth();
 }

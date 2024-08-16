@@ -8,7 +8,9 @@ package com.itheima.pattern.adapter.objectadapter;
  */
 public class SDAdapterTF implements SDCard {
 
-    //声明适配者类
+    /**
+     * 声明适配者类
+     */
     private TFCard tfCard;
 
     public SDAdapterTF(TFCard tfCard) {
