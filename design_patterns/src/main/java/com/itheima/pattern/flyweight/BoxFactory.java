@@ -1,6 +1,5 @@
 package com.itheima.pattern.flyweight;
 
-import javax.swing.*;
 import java.util.HashMap;
 
 /**
@@ -11,14 +10,14 @@ import java.util.HashMap;
  */
 public class BoxFactory {
 
-    private HashMap<String,AbstractBox> map;
+    private HashMap<String, AbstractBox> map;
 
     //在构造方法中进行初始化操作
     private BoxFactory() {
         map = new HashMap<String, AbstractBox>();
-        map.put("I",new IBox());
-        map.put("L",new LBox());
-        map.put("O",new OBox());
+        map.put("I", new IBox());
+        map.put("L", new LBox());
+        map.put("O", new OBox());
     }
 
     //提供一个方法获取该工厂类对象

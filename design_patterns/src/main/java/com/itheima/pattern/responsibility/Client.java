@@ -9,7 +9,7 @@ package com.itheima.pattern.responsibility;
 public class Client {
     public static void main(String[] args) {
         //创建一个请假条对象
-        LeaveRequest leave = new LeaveRequest("小明",1,"身体不适");
+        LeaveRequest leave = new LeaveRequest("小明", 1, "身体不适");
 
         //创建各级领导对象
         GroupLeader groupLeader = new GroupLeader();

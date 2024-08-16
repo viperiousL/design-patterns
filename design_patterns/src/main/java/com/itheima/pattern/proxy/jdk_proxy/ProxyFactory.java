@@ -8,7 +8,7 @@ import java.lang.reflect.Proxy;
  * @version v1.0
  * @ClassName: ProxyFactory
  * @Description: 获取代理对象的工厂类
- *      代理类也实现了对应的接口
+ * 代理类也实现了对应的接口
  * @Author: 黑马程序员
  */
 public class ProxyFactory {
@@ -24,7 +24,7 @@ public class ProxyFactory {
             Class<?>[] interfaces ： 代理类实现的接口的字节码对象
             InvocationHandler h ： 代理对象的调用处理程序
          */
-        SellTickets proxyObject = (SellTickets)Proxy.newProxyInstance(
+        SellTickets proxyObject = (SellTickets) Proxy.newProxyInstance(
                 station.getClass().getClassLoader(),
                 station.getClass().getInterfaces(),
                 new InvocationHandler() {
@@ -36,6 +36,7 @@ public class ProxyFactory {
 
                         返回值： 方法的返回值。
                      */
+                    @Override
                     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                         //System.out.println("invoke方法执行了");
                         System.out.println("代售点收取一定的服务费用(jdk动态代理)");

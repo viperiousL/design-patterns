@@ -1,7 +1,5 @@
 package com.itheima.pattern.facade;
 
-import java.util.logging.Level;
-
 /**
  * @version v1.0
  * @ClassName: SmartAppliancesFacade
@@ -23,9 +21,9 @@ public class SmartAppliancesFacade {
 
     //通过语言控制
     public void say(String message) {
-        if(message.contains("打开")) {
+        if (message.contains("打开")) {
             on();
-        } else if(message.contains("关闭")) {
+        } else if (message.contains("关闭")) {
             off();
         } else {
             System.out.println("我还听不懂你说的！！！");

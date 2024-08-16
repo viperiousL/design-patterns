@@ -15,7 +15,7 @@ public class Menu extends MenuComponent {
     private List<MenuComponent> menuComponentList = new ArrayList<MenuComponent>();
 
     //构造方法
-    public Menu(String name,int level) {
+    public Menu(String name, int level) {
         this.name = name;
         this.level = level;
     }
@@ -38,7 +38,7 @@ public class Menu extends MenuComponent {
     @Override
     public void print() {
         //打印菜单名称
-        for(int i = 0; i < level; i++) {
+        for (int i = 0; i < level; i++) {
             System.out.print("--");
         }
         System.out.println(name);

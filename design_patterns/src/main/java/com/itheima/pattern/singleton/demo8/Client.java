@@ -5,8 +5,7 @@ import java.lang.reflect.Constructor;
 /**
  * @version v1.0
  * @ClassName: Client
- * @Description:
- *      测试使用反射破坏单例模式
+ * @Description: 测试使用反射破坏单例模式
  * @Author: 黑马程序员
  */
 public class Client {

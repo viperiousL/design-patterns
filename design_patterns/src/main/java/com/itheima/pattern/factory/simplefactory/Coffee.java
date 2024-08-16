@@ -1,4 +1,4 @@
-package com.itheima.pattern.factory.static_factory;
+package com.itheima.pattern.factory.simplefactory;
 
 /**
  * @version v1.0

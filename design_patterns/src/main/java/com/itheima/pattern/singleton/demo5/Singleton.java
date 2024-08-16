@@ -9,7 +9,8 @@ package com.itheima.pattern.singleton.demo5;
 public class Singleton {
 
     //私有构造方法
-    private Singleton() {}
+    private Singleton() {
+    }
 
     //定义一个静态内部类
     private static class SingletonHolder {

@@ -8,8 +8,10 @@ package com.itheima.pattern.visitor;
  */
 public class Cat implements Animal {
 
+    @Override
     public void accept(Person person) {
-        person.feed(this); //访问者给宠物猫喂食
+        //访问者给宠物猫喂食
+        person.feed(this);
         System.out.println("好好吃，喵喵喵。。。");
     }
 }

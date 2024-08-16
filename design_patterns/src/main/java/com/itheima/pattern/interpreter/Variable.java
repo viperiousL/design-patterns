@@ -15,6 +15,7 @@ public class Variable extends AbstractExpression {
         this.name = name;
     }
 
+    @Override
     public int interpret(Context context) {
         //直接返回变量的值
         return context.getValue(this);

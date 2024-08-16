@@ -7,6 +7,7 @@ package com.itheima.pattern.factory.abstract_factory;
  * @Author: 黑马程序员
  */
 public class MatchaMousse extends Dessert {
+    @Override
     public void show() {
         System.out.println("抹茶慕斯");
     }

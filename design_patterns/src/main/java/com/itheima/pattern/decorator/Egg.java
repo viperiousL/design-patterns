@@ -9,9 +9,10 @@ package com.itheima.pattern.decorator;
 public class Egg extends Garnish {
 
     public Egg(FastFood fastFood) {
-        super(fastFood,1,"鸡蛋");
+        super(fastFood, 1, "鸡蛋");
     }
 
+    @Override
     public float cost() {
         //计算价格
         return getPrice() + getFastFood().cost();

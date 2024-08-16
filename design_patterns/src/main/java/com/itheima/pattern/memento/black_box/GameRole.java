@@ -29,7 +29,7 @@ public class GameRole {
 
     //保存角色状态功能
     public Memento saveState() {
-        return new RoleStateMemento(vit,atk,def);
+        return new RoleStateMemento(vit, atk, def);
     }
 
     //恢复角色状态

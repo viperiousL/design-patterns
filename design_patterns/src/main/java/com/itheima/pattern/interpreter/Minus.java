@@ -18,6 +18,7 @@ public class Minus extends AbstractExpression {
         this.right = right;
     }
 
+    @Override
     public int interpret(Context context) {
         //将左边表达式的结果和右边表达式的结果进行相减
         return left.interpret(context) - right.interpret(context);

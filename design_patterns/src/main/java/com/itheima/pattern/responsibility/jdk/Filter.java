@@ -7,5 +7,5 @@ package com.itheima.pattern.responsibility.jdk;
  * @Author: 黑马程序员
  */
 public interface Filter {
-    public void doFilter(Request req,Response res,FilterChain c);
+    public void doFilter(Request req, Response res, FilterChain c);
 }

@@ -1,5 +1,4 @@
-package com.itheima.pattern.factory.simple_factory;
-
+package com.itheima.pattern.factory.configfactory;
 
 /**
  * @version v1.0
@@ -9,6 +8,7 @@ package com.itheima.pattern.factory.simple_factory;
  */
 public class LatteCoffee extends Coffee {
 
+    @Override
     public String getName() {
         return "拿铁咖啡";
     }

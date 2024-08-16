@@ -29,6 +29,7 @@ public class ProxyFactory implements MethodInterceptor {
         return proxyObject;
     }
 
+    @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         //System.out.println("方法执行了");
         System.out.println("代售点收取一定的服务费用(CGLib代理)");

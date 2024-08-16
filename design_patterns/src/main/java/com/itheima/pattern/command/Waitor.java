@@ -24,9 +24,9 @@ public class Waitor {
         System.out.println("美女服务员：大厨，新订单来了。。。。");
         //遍历list集合
         for (Command command : commands) {
-           if(command != null) {
-               command.execute();
-           }
+            if (command != null) {
+                command.execute();
+            }
         }
     }
 }

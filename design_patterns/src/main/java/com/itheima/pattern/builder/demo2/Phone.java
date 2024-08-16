@@ -47,10 +47,12 @@ public class Phone {
             this.screen = screen;
             return this;
         }
+
         public Builder memory(String memory) {
             this.memory = memory;
             return this;
         }
+
         public Builder mainboard(String mainboard) {
             this.mainboard = mainboard;
             return this;

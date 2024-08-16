@@ -14,7 +14,7 @@ public class Order {
     private int diningTable;
 
     //所下的餐品及份数
-    private Map<String,Integer> foodDir = new HashMap<String, Integer>();
+    private Map<String, Integer> foodDir = new HashMap<String, Integer>();
 
     public int getDiningTable() {
         return diningTable;
@@ -28,7 +28,7 @@ public class Order {
         return foodDir;
     }
 
-    public void setFood(String name,int num) {
-        foodDir.put(name,num);
+    public void setFood(String name, int num) {
+        foodDir.put(name, num);
     }
 }

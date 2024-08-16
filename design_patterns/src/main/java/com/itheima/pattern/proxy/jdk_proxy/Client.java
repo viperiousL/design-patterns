@@ -19,7 +19,8 @@ public class Client {
         System.out.println(proxyObject.getClass());
 
         //让程序一直执行
-        while(true) {}
+        while (true) {
+        }
 
     }
 }

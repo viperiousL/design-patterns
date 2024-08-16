@@ -1,6 +1,5 @@
-package com.itheima.pattern.factory.config_factory;
+package com.itheima.pattern.factory.configfactory;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Properties;
@@ -16,7 +15,7 @@ public class CoffeeFactory {
 
     //加载配置文件，获取配置文件中配置的全类名，并创建该类的对象进行存储
     //1,定义容器对象存储咖啡对象
-    private static HashMap<String,Coffee> map = new HashMap<String, Coffee>();
+    private static HashMap<String, Coffee> map = new HashMap<String, Coffee>();
 
     //2,加载配置文件， 只需要加载一次
     static {
@@ -34,7 +33,7 @@ public class CoffeeFactory {
                 Class clazz = Class.forName(className);
                 Coffee coffee = (Coffee) clazz.newInstance();
                 //将名称和对象存储到容器中
-                map.put((String)key,coffee);
+                map.put((String) key, coffee);
             }
         } catch (Exception e) {
             e.printStackTrace();

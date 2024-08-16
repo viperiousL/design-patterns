@@ -40,7 +40,7 @@ public abstract class Handler {
     public final void submit(LeaveRequest leave) {
         //该领导进行审批
         this.handleLeave(leave);
-        if(this.nextHandler != null && leave.getNum() > this.numEnd) {
+        if (this.nextHandler != null && leave.getNum() > this.numEnd) {
             //提交给上级领导进行审批
             this.nextHandler.submit(leave);
         } else {

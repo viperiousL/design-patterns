@@ -4,15 +4,14 @@ package com.itheima.pattern.singleton.demo2;
 /**
  * @version v1.0
  * @ClassName: Singleton
- * @Description:
- *
- *      饿汉式 ： 静态代码块
+ * @Description: 饿汉式 ： 静态代码块
  * @Author: 黑马程序员
  */
 public class Singleton {
 
     //私有构造方法
-    private Singleton() {}
+    private Singleton() {
+    }
 
     //声明Singleton类型的变量
     private static Singleton instance; //null

@@ -34,7 +34,7 @@ public abstract class AbstractClass {
 
 
     //第五步：翻炒是一样的，所以直接实现
-    public void fry(){
+    public void fry() {
         System.out.println("炒啊炒啊炒到熟啊");
     }
 }

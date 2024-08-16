@@ -31,7 +31,7 @@ public class RectangleDemo {
     //扩宽方法
     public static void resize(Rectangle rectangle) {
         //判断宽如果比长小，进行扩宽的操作
-        while(rectangle.getWidth() <= rectangle.getLength()) {
+        while (rectangle.getWidth() <= rectangle.getLength()) {
             rectangle.setWidth(rectangle.getWidth() + 1);
         }
     }

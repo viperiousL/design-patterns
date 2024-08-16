@@ -18,13 +18,13 @@ public class Client {
         Variable d = new Variable("d");
 
         //将变量存储到环境对象中
-        context.assign(a,1);
-        context.assign(b,2);
-        context.assign(c,3);
-        context.assign(d,4);
+        context.assign(a, 1);
+        context.assign(b, 2);
+        context.assign(c, 3);
+        context.assign(d, 4);
 
         //获取抽象语法树    a + b - c + d
-        AbstractExpression expression = new Minus(a,new Minus(new Minus(b,c),d));
+        AbstractExpression expression = new Minus(a, new Minus(new Minus(b, c), d));
 
         //解释（计算）
         int result = expression.interpret(context);

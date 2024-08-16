@@ -19,7 +19,7 @@ public abstract class Garnish extends FastFood {
         this.fastFood = fastFood;
     }
 
-    public Garnish(FastFood fastFood,float price, String desc) {
+    public Garnish(FastFood fastFood, float price, String desc) {
         super(price, desc);
         this.fastFood = fastFood;
     }

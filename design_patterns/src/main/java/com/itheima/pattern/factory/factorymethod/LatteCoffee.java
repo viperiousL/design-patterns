@@ -1,4 +1,4 @@
-package com.itheima.pattern.factory.factory_method;
+package com.itheima.pattern.factory.factorymethod;
 
 
 /**
@@ -9,6 +9,7 @@ package com.itheima.pattern.factory.factory_method;
  */
 public class LatteCoffee extends Coffee {
 
+    @Override
     public String getName() {
         return "拿铁咖啡";
     }

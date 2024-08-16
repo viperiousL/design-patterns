@@ -22,6 +22,6 @@ public class RuntimeDemo {
         //读取数据
         int len = is.read(arr);//返回读到的字节的个数
         //将字节数组转换为字符串输出到控制台
-        System.out.println(new String(arr,0,len,"GBK"));
+        System.out.println(new String(arr, 0, len, "GBK"));
     }
 }

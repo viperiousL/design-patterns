@@ -11,7 +11,8 @@ import java.io.Serializable;
 public class Singleton implements Serializable {
 
     //私有构造方法
-    private Singleton() {}
+    private Singleton() {
+    }
 
     //定义一个静态内部类
     private static class SingletonHolder {

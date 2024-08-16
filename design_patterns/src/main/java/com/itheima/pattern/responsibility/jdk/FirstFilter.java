@@ -7,6 +7,7 @@ package com.itheima.pattern.responsibility.jdk;
  * @Author: 黑马程序员
  */
 public class FirstFilter implements Filter {
+    @Override
     public void doFilter(Request req, Response res, FilterChain chain) {
         System.out.println("过滤器1 前置处理");
 

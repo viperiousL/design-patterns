@@ -1,4 +1,4 @@
-package com.itheima.pattern.factory.simple_factory;
+package com.itheima.pattern.factory.staticfactory;
 
 
 /**
@@ -11,9 +11,10 @@ public class CoffeeStore {
 
     public Coffee orderCoffee(String type) {
 
-        SimpleCoffeeFactory factory = new SimpleCoffeeFactory();
+        /*SimpleCoffeeFactory factory = new SimpleCoffeeFactory();
         //调用生产咖啡的方法
-        Coffee coffee = factory.createCoffee(type);
+        Coffee coffee = factory.createCoffee(type);*/
+        Coffee coffee = SimpleCoffeeFactory.createCoffee(type);
 
         //加配料
         coffee.addMilk();
