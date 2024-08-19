@@ -14,7 +14,7 @@ public class SubscriptionSubject implements Subject {
     /**
      * 定义一个集合，用来存储多个观察者对象
      */
-    private List<Observer> weiXinUserList = new ArrayList<Observer>();
+    private final List<Observer> weiXinUserList = new ArrayList<Observer>();
 
     @Override
     public void attach(Observer observer) {
